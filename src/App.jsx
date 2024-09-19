@@ -1,21 +1,16 @@
 import React from 'react';
+  // Import the SolarSystem component
 import APOD from './components/APOD';
-import SolarSystem from './components/SolarSystem';
-import  SpaceNews from './components/SpaceNews';
-import SpaceWeather from './components/SpaceWeather';
-import './index.css';
-
-
-const App = () => {
-    return (
-        <div>
-            <h1>Space Exploration</h1>
-            {/* Render Componenets */}
-            <APOD />
-            <SolarSystem />
-            <SpaceNews />
-            <SpaceWeather />
-        </div>
-    );
+function App() {
+  return (
+    <div>
+      {/* Place the heading outside of the Canvas */}
+      <h1>Space Exploration Dashboard</h1>
+      {/* Render the SolarSystem component */}
+      {/* <SolarSystem /> */}
+      <APOD />
+    </div>
+  );
 };
+
 export default App;

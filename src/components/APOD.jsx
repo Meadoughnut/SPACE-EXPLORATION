@@ -13,6 +13,7 @@ const APOD = () => {
         const response = await axios.get(
           `https://api.nasa.gov/planetary/apod?api_key=${apiKey}`
         );
+        console.log('response', response);
         setApodData(response.data);  // Set the fetched data in state
         setLoading(false);           // Turn off loading
       } catch (err) {
